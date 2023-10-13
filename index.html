@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARRACAJAP</title>
+    <link rel="stylesheet" href="index.css"> <!-- Enlace a tu archivo CSS local -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary" style="background-color: rgb(253, 119, 1);">
+        <div class="container"> 
+            <h2 class="titulo" href="#" style="color: white;">BARRACA JAP</h2>        
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                    <p class="nav-link" aria-current="page" href="#">Sobre</p>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link" href="#">Contacto</p>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link" id="catalogo-link" href="#">Catálogo</p>
+                </li>
+                <ul class="navbar-nav">
+                    <li class="navbar-nav dropdown">
+                        <p class="nav-link dropdown-toggle" href="#" id="carritoDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carrito
+                        </p>
+                    </li>                  
+                </ul>
+            </ul>
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="carritoDropdown">
+            <li>
+                <div class="container carrito-content" style="background-color: white; padding: 20px; display: none;">
+                    <h2>Carrito de Compras</h2>
+                    <nav id="lista-carrito">
+                        <!-- Los elementos del carrito se mostrarán aquí -->
+                    </nav>
+                    <p>Total del Carrito: <span id="total-carrito">$0.00</span></p>
+                    <p>Método de Pago:
+                        <label>
+                            <input type="radio" name="metodo-pago" value="efectivo" checked> Efectivo
+                        </label>
+                        <label>
+                            <input type="radio" name="metodo-pago" value="credito"> Crédito
+                        </label>
+                        <label>
+                            <input type="radio" name="metodo-pago" value="debito"> Débito
+                        </label>
+                    </p>
+                    <button id="vaciar-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                        <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a.2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                    </svg></button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Haz Clic en "Catálogo" para ver nuestros productos</h1>
+        <ul id="productos-lista" style="display: none;">
+            <!-- Los productos se generarán aquí dinámicamente -->
+        </ul>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+    
+

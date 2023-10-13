@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#icon-carrito {
+    display: flex;
+    cursor: pointer;
+    background-color: #22ff00; /* Color de fondo del botón del carrito */
+    color: #0a0a0a; /* Color del texto del botón del carrito */
+    padding: 5px 10px; /* Espaciado dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px;
+}  
+
+#total-carrito {
+    display: flex;
+    transform: translate(70%, 0%);
+
+}
+#vaciar-carrito {
+    background-color: rgba(255, 0, 0, 0.444);
+    color: #0a0a0a;
+    width: 40px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+#vaciar-carrito svg {
+    fill: #fff;
+    width: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+    height: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+}
+
+
+.navbar-nav .nav-link {
+    color: rgb(245, 121, 5); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 50px;
+    margin-left: 25px;
+    
+}
+.container-fluid .navbar-brand{
+    color: #fff;
+    margin-right: 50px;
+    
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+#catalogo-link{
+    cursor: pointer;
+}
+#carritoDropdown {
+    cursor: pointer;
+}
+
+.producto-appear {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
